@@ -7,10 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "FRPicture.h"
 
 @interface ViewController : NSViewController
 
 @property (weak) IBOutlet NSTableView *tableView;
+
+@property (nonatomic, strong) NSMutableArray<FRPicture *> *picArr;
+@property (weak) IBOutlet NSTextField *detailText;
+@property (weak) IBOutlet NSImageView *detailImg;
 
 @end
 

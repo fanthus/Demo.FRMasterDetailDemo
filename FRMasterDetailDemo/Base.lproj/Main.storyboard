@@ -756,6 +756,9 @@
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
+                                                    <connections>
+                                                        <binding destination="yuU-7p-bUD" name="value" keyPath="arrangedObjects.picName" id="uD1-s4-Ram"/>
+                                                    </connections>
                                                 </tableColumn>
                                                 <tableColumn identifier="ImgNameColumn" width="108" minWidth="40" maxWidth="1000" id="nWC-BE-SEr" userLabel="Img Name Column">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="图片文件名">
@@ -813,13 +816,16 @@
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
+                                                    <connections>
+                                                        <binding destination="yuU-7p-bUD" name="value" keyPath="arrangedObjects.imgName" id="va2-ja-lP4"/>
+                                                    </connections>
                                                 </tableColumn>
                                             </tableColumns>
                                         </tableView>
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="3pK-6o-ppT">
-                                    <rect key="frame" x="1" y="119" width="223" height="15"/>
+                                    <rect key="frame" x="1" y="-15" width="0.0" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="vzN-Wd-4NP">
@@ -844,14 +850,31 @@
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <binding destination="yuU-7p-bUD" name="value" keyPath="selection.picName" id="8iP-4q-efL"/>
+                                </connections>
                             </textField>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="detailImg" destination="OMv-jA-gEA" id="a0c-oW-b7c"/>
+                        <outlet property="detailText" destination="lSy-7F-16N" id="aVE-OW-d6F"/>
                         <outlet property="tableView" destination="swK-zv-VEg" id="PNe-Td-ecI"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <arrayController id="yuU-7p-bUD">
+                    <connections>
+                        <binding destination="XfG-lQ-9wD" name="contentArray" keyPath="picArr" id="2fy-6w-hLg">
+                            <dictionary key="options">
+                                <bool key="NSAlwaysPresentsApplicationModalAlerts" value="YES"/>
+                                <bool key="NSHandlesContentAsCompoundValue" value="YES"/>
+                                <bool key="NSSelectsAllWhenSettingContent" value="YES"/>
+                                <bool key="NSValidatesImmediately" value="YES"/>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </arrayController>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
