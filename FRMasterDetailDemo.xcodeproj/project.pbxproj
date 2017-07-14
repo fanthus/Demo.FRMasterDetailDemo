@@ -14,6 +14,11 @@
 		B533F38D1F18B65A00B91856 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B533F38B1F18B65A00B91856 /* Main.storyboard */; };
 		B533F3981F18B65A00B91856 /* FRMasterDetailDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B533F3971F18B65A00B91856 /* FRMasterDetailDemoTests.m */; };
 		B533F3A31F18B65A00B91856 /* FRMasterDetailDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B533F3A21F18B65A00B91856 /* FRMasterDetailDemoUITests.m */; };
+		B533F3B31F18B6D500B91856 /* 城市风景.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B533F3B01F18B6D500B91856 /* 城市风景.jpg */; };
+		B533F3B41F18B6D500B91856 /* 规则几何.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B533F3B11F18B6D500B91856 /* 规则几何.jpg */; };
+		B533F3B51F18B6D500B91856 /* 森林.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B533F3B21F18B6D500B91856 /* 森林.jpg */; };
+		B533F3B71F18B6ED00B91856 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = B533F3B61F18B6ED00B91856 /* placeholder.png */; };
+		B533F3BA1F18B78200B91856 /* FRPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = B533F3B91F18B78200B91856 /* FRPicture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,12 @@
 		B533F39E1F18B65A00B91856 /* FRMasterDetailDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRMasterDetailDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B533F3A21F18B65A00B91856 /* FRMasterDetailDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRMasterDetailDemoUITests.m; sourceTree = "<group>"; };
 		B533F3A41F18B65A00B91856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B533F3B01F18B6D500B91856 /* 城市风景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "城市风景.jpg"; sourceTree = "<group>"; };
+		B533F3B11F18B6D500B91856 /* 规则几何.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "规则几何.jpg"; sourceTree = "<group>"; };
+		B533F3B21F18B6D500B91856 /* 森林.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "森林.jpg"; sourceTree = "<group>"; };
+		B533F3B61F18B6ED00B91856 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		B533F3B81F18B78200B91856 /* FRPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPicture.h; sourceTree = "<group>"; };
+		B533F3B91F18B78200B91856 /* FRPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPicture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +114,15 @@
 				B533F3811F18B65A00B91856 /* AppDelegate.m */,
 				B533F3861F18B65A00B91856 /* ViewController.h */,
 				B533F3871F18B65A00B91856 /* ViewController.m */,
+				B533F3B81F18B78200B91856 /* FRPicture.h */,
+				B533F3B91F18B78200B91856 /* FRPicture.m */,
 				B533F3891F18B65A00B91856 /* Assets.xcassets */,
 				B533F38B1F18B65A00B91856 /* Main.storyboard */,
 				B533F38E1F18B65A00B91856 /* Info.plist */,
+				B533F3B61F18B6ED00B91856 /* placeholder.png */,
+				B533F3B01F18B6D500B91856 /* 城市风景.jpg */,
+				B533F3B11F18B6D500B91856 /* 规则几何.jpg */,
+				B533F3B21F18B6D500B91856 /* 森林.jpg */,
 				B533F3831F18B65A00B91856 /* Supporting Files */,
 			);
 			path = FRMasterDetailDemo;
@@ -246,7 +263,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B533F3B51F18B6D500B91856 /* 森林.jpg in Resources */,
+				B533F3B71F18B6ED00B91856 /* placeholder.png in Resources */,
 				B533F38A1F18B65A00B91856 /* Assets.xcassets in Resources */,
+				B533F3B41F18B6D500B91856 /* 规则几何.jpg in Resources */,
+				B533F3B31F18B6D500B91856 /* 城市风景.jpg in Resources */,
 				B533F38D1F18B65A00B91856 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +295,7 @@
 			files = (
 				B533F3881F18B65A00B91856 /* ViewController.m in Sources */,
 				B533F3851F18B65A00B91856 /* main.m in Sources */,
+				B533F3BA1F18B78200B91856 /* FRPicture.m in Sources */,
 				B533F3821F18B65A00B91856 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
